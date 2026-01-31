@@ -33,16 +33,11 @@ io::stdin().read_line(&mut s).expect("ehm");
 let f: i32 = f.trim().parse().expect("mhm");
 let s: i32 = s.trim().parse().expect("mhm");
 let rawinput: char = rawinput.trim().parse().expect("allo");
-if rawinput == '+' {
-	plus(f, s);
-} else if rawinput == '-' {
-	minus(f, s);
-} else if rawinput == '/' {
-	idk(f, s);
-	
-} else if rawinput == '*' {
-	multiple(f, s);
-} else {
-	println!("idk");
-}
+match rawinput {
+	'+' => plus(f, s),
+	'-' => minus(f,s),
+	'/' => idk(f,s),
+	'*' => multiple(f,s),
+	_ => println!("idk bro this operator"),
+};
 }
