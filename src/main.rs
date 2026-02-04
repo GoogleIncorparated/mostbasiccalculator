@@ -38,6 +38,6 @@ match rawinput {
 	'-' => minus(f,s),
 	'/' => idk(f,s),
 	'*' => multiple(f,s),
-	_ => println!("idk bro this operator"),
+	_ => println!("соси хуй"),
 };
 }
